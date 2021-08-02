@@ -10,13 +10,23 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String phone;
+    private String role;
 
     public Customer() {}
 
-    public Customer(String firstName, String lastName, String phone) {
+    public Customer(String firstName, String lastName, String phone, String role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
+        this.role = role;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public String getPhone() {
